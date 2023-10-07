@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Final Project</title>
+
+</head>
+<body>
+    <div class="container"> 
+        <h2>Movie Gallery</h2> 
+        <p>Press the arrows to change the image</p> 
+        <div id="image-gallery">
+          <button class="button" onClick="onButtonClick('prev')" >
+            <img class="arrow" src="arrow.png" />
+          </button>
+          <div id="image-gallery-main">
+            <img id="current-image">
+            <div id="current-image-description"></div>
+          </div>
+          <button class="button"  onClick="onButtonClick('next')">
+            <img class="arrow reverse" src="arrow.png" />
+          </button>
+        </div>
+          <div id="image-thumbs"></div>
+        
+</body>
+<script src="script.js"></script>
+</html>
